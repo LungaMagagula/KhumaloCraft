@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+  <ul>
+    <li>  <a href="/Home/Index">Index</a>  </li>
+    <li>  <a href="/Home/Home">Home</a>  </li>
+    <li>  <a href="/Home/About">About</a>  </li>
+    <li>  <a href="/Home/Contact">Contact</a>  </li>
+    <li>  <a href="/Home/MyWork">MyWork</a>  </li>
+</ul>
+<head>
+
+    @{
+    }
+
+    <title>Contact</title>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="left-side">
+            <h2 style="background-color:tan;">Contact KhumaloCrafts</h2>
+            <p>KhumaloCraft Contact Details</p>
+            <p><b>Address:</b> 105 Smith Street, Johannesburg, 1632</p>
+            <p><b>Phone:</b> 011 866 0987</p>
+            <p><b>Email:</b> <a href="mailto:info@khumalocrafts.com">info@Kcrafts.com</a></p>
+        </div>
+        <div class="right-side">
+            <form action="/contact/submit" method="post">
+                <div class="input-box">
+                    <input type="text" name="name" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="email" required="required">
+                    <span>Email Address</span>
+                </div>
+                <div class="input-box message-box">
+                    <textarea name="message" required="required"></textarea>
+                    <span>Type Your Message Here...</span>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Send Now">
+                    <footer>
+                        <p>KhumaloCrafts</p>
+                    </footer>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
